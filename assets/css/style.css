@@ -26,6 +26,7 @@ ul {
 
 body {
     color: #262626;
+    background-color: #F7F7F8;
 }
 
 /* header*************************************************************** */
@@ -35,7 +36,7 @@ header {
     top: 0%;
     z-index: 9;
     padding: 10px 0px;
-    background-color: white;
+    background-color: #F7F7F8;
 }
 
 header .logo {
@@ -62,7 +63,6 @@ header .auth {
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    width: 189.13;
 }
 
 header .auth .signup {
@@ -303,6 +303,7 @@ header .headen-logo {
 }
 
 .courses .course-item {
+    background-color: #FCFCFD;
     width: calc((100% - 30px)/2);
     display: flex;
     flex-direction: column;
@@ -407,6 +408,7 @@ header .headen-logo {
 }
 
 .testimonials .testimonial-bottom .testimonial-item {
+    background-color: #FCFCFD;
     width: calc((100% - 30px)/2);
     border-radius: 15px;
 }
@@ -526,11 +528,25 @@ footer .container {
     .courses .course-item {
         width: 100%;
     }
+    .heros .hero-title {
+        font-size:20px;
+    }
+    .heros .hero-title img {
+        width: 30px;
+        height: 30px;
+    }
+    .heros .hero-icon svg {
+        width: 25px;
+        height: 25px;
+    }
 }
 
-@media screen and (max-width:770px) and (min-width:0px) {
+@media screen and (max-width:780px) and (min-width:0px) {
     footer .footer-end {
         flex-direction: column;
+    }
+    .container {
+        width: calc(100% - 100px);
     }
 
 }
@@ -563,3 +579,19 @@ footer .container {
         border-radius: 15px;
     }
 }
+@media screen and (max-width:1025px) and (min-width:0px) {
+     .container {
+        width: calc(100% - 160px);
+    }
+    
+
+}
+@media screen and (max-width:425px) and (min-width:0px) {
+    .container {
+       width: calc(100% - 35px);
+       margin: auto;
+   }
+   
+
+}
+
